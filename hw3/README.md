@@ -26,7 +26,6 @@ Accept: text/html,application/xhtml+xml,applica ... (too long, ignored)
 Accept-Language: en-US,en;q=0.8,zh-TW;q=0.5,zh; ... (too long, ignored)
 Accept-Encoding: gzip, deflate
 DNT: 1
-1
 Connection: keep-alive
 Upgrade-Insecure-Requests: 1
 ```
