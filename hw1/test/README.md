@@ -1,15 +1,10 @@
-# NP Project1 Demo Script (beta)
-
-### Important information: 
-1. This is a sample demo scipt. It is just a sample, the final one might be different.
-
-2. The test cases in this directory are from 2016, the ones used for this year will be different.
+# NP Project1 Demo Script
 
 ### This directory contains the following
 - demo.sh: 
     - Usage: `./demo.sh [npshell_path]`
     - demo.sh does the following:
-    1. Contruct the working directory (work_template and work_dir)
+    1. Construct the working directory (work_template and work_dir)
     2. Compile the commands (noop, removetag...) and place them into bin/ inside the working directory
     3. Copy cat and ls into bin/ inside the working directory
     4. Run the npshell inside work_dir
@@ -31,13 +26,9 @@
 - src/
     - Contains source code of commands (noop, removetag...) and test.html
 
-### Scenario
-- Assume there are two directories, np_project1_demo_sample and 0756000 inside a private directroy on NP server.
-- My npshell is inside 0756000 directory
-- I am now inside np_project1_demo_sample
-
+### Test Output
 ```
-  bash$ ./demo.sh ../0756000/npshell
+  bash$ ./demo.sh npshell
   ...
   ... # Some messeges generated while compiling and setting up environment
   ...
