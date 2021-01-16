@@ -1,6 +1,11 @@
 # NP Project2 Demo Script
 ## Important information:
-1. Please make your servers fit the requirements:
+
+1. This is a sample demo scipt. It is just a sample, the final one might be different.
+
+2. The test cases in this directory are from 2016, the ones used for this year will be different.
+
+3. Please make your servers fit the requirements:
    - yourNpServer takes in 1 argument, which is the port number.
 
    `./yourNpServer 12345`
@@ -16,7 +21,7 @@
         |-user_pipe
 ```
 
-2. We recommand you use telnet during delopment.
+4. We recommand you use telnet during delopment.
    - Assume you run your server on nplinux2 listening to port 12345
    - Run the following telnet commnad on any computer
 
@@ -32,9 +37,9 @@
     %
 ```
 
-3. Please be aware that the line sent from telnet and our delayclient might end with "\r\n".
+5. Please be aware that the line sent from telnet and our delayclient might end with "\r\n".
 
-3. The output order of the command "ls" might be different, we will try to avoid this situation during demo.
+6. The output order of the command "ls" might be different, we will try to avoid this situation during demo.
 
 ## This directory contains the following
 
