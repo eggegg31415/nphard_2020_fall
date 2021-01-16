@@ -1,0 +1,13 @@
+% bin:.
+% bin
+test.html
+% % .
+% Unknown command: [ls].
+% % cat
+ls
+noop
+number
+removetag
+removetag0
+% Unknown command: [date].
+% 
