@@ -44,20 +44,21 @@ private:
 public:
     Console(sessions s) : resolv(ioservice), tcp_socket(ioservice), info(move(s)), timer(ioservice){}
     void start(){
-        say_hello();
+        //say_hello(); // demo
         connect_server();
     }
 private:
-    void say_hello(){
-        auto self(shared_from_this());
-        timer.expires_from_now(boost::posix_time::seconds(2));
-        timer.async_wait([this, self](boost::system::error_code ec){
-                if(!ec){
-                    cout << "<script>document.getElementById('" << info.id << "').innerHTML += '<font color=\"white\">hello</font>';</script>" << endl;
-                }
-                say_hello();
-            });
-    }
+    // demo
+    //void say_hello(){
+    //    auto self(shared_from_this());
+    //    timer.expires_from_now(boost::posix_time::seconds(2));
+    //    timer.async_wait([this, self](boost::system::error_code ec){
+    //            if(!ec){
+    //                cout << "<script>document.getElementById('" << info.id << "').innerHTML += '<font color=\"white\">hello</font>';</script>" << endl;
+    //            }
+    //            say_hello();
+    //        });
+    //}
     void read_handler(){
         auto self(shared_from_this());
         tcp_socket.async_read_some(boost::asio::buffer(bytes), [this, self](boost::system::error_code ec, size_t length) {
