@@ -5,8 +5,6 @@ all: clean
 	$(CC) $(CFLAGS) http_server.cpp -o http_server
 	$(CC) console.cpp -o console.cgi -pthread -std=c++14
 	$(CC) other.cpp -o other.cgi -pthread -std=c++14
-	cp extra_files/cgi/panel.cgi .
-	cp *.cgi ~/public_html/cgi
 
 part1:
 	$(CC) $(CFLAGS) http_server.cpp -o http_server
